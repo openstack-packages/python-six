@@ -49,7 +49,7 @@ This is the Python 3 build of the module.
 %endif
 
 %prep
-%setup -q -n six-%{version}
+%setup -q -n six-%{upstream_version}
 %if 0%{?with_python3}
 rm -rf %{py3dir}
 cp -a . %{py3dir}
